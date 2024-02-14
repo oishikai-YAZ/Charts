@@ -43,6 +43,7 @@ open class RadarChartView: PieRadarChartViewBase
     
     internal var _yAxisRenderer: YAxisRendererRadarChart!
     internal var _xAxisRenderer: XAxisRendererRadarChart!
+    open var paramsForDrawWeb : ((CGFloat, CGFloat, CGFloat, CGPoint, Int)->())?
     
     public override init(frame: CGRect)
     {

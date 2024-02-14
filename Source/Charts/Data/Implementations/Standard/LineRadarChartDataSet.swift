@@ -33,6 +33,8 @@ open class LineRadarChartDataSet: LineScatterCandleRadarChartDataSet, LineRadarC
         }
     }
     
+    open var lineDashLenghts : [CGFloat] = []
+
     /// The object that is used for filling the area below the line.
     /// **default**: nil
     open var fill: Fill?

@@ -311,7 +311,7 @@ open class RadarChartRenderer: LineRadarRenderer
         context.setAlpha(chart.webAlpha)
         
         let labelCount = chart.yAxis.entryCount
-        
+        chart.paramsForDrawWeb?(sliceangle,factor,rotationangle,center,labelCount)
         for j in 0 ..< labelCount
         {
             for i in 0 ..< data.entryCount
